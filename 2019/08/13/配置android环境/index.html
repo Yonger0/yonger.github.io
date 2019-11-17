@@ -3,27 +3,71 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
-  <title>無名姑娘</title>
+  <title>配置Android环境 - 無名姑娘</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="無名姑娘">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="（第一讲）自述以及如何配置 Android 开发环境  gtf32 2018-04-25 魅族 MX4 大家好，从今天开始我将会每天推送一小篇文章，让大家利用碎片时间轻松入门Android 开发。   在我的分享中，你不需要有任何的编程经验，只要你有一颗爱探索的心就行。   考虑到大多数基友都是学生，而且都是用手机去阅读，所以我的所有分享都会用 Android上的开发工具 “AIDE” 和PC上">
+<meta name="keywords" content="技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置Android环境">
+<meta property="og:url" content="http://yoursite.com/2019/08/13/配置android环境/index.html">
 <meta property="og:site_name" content="無名姑娘">
+<meta property="og:description" content="（第一讲）自述以及如何配置 Android 开发环境  gtf32 2018-04-25 魅族 MX4 大家好，从今天开始我将会每天推送一小篇文章，让大家利用碎片时间轻松入门Android 开发。   在我的分享中，你不需要有任何的编程经验，只要你有一颗爱探索的心就行。   考虑到大多数基友都是学生，而且都是用手机去阅读，所以我的所有分享都会用 Android上的开发工具 “AIDE” 和PC上">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg">
+<meta property="og:image" content="http://avatar.coolapk.com/data/000/52/77/43_avatar_middle.jpg?1455604044">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643928_3586@406x978.gif">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643930_7954@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643932_4054@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643933_6884@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643934_9757@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643936_5749@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643938_1025@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643939_3932@395x886.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643941_1533@1214x835.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643943_3884@1232x705.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643944_9867@1232x705.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643947_1498@1901x999.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643949_0753@547x199.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643950_3219@810x610.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643952_2645@810x610.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643953_8666@810x610.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643955_3852@779x520.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643957_0769@902x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643958_5379@902x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643960_1956@902x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643962_1155@902x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643964_0717@1080x579.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643981_9767@404x54.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643966_7539@1722x840.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643968_9948@1002x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643970_6736@1002x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643971_5753@802x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643973_4913@1002x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643975_7483@1002x689.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643977_4323@1722x840.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643978_4751@401x807.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643980_4876@508x822.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643981_9767@404x54.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643983_3776@626x507.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643984_8391@854x139.jpg.m.jpg">
+<meta property="og:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643986_1803@401x807.jpg.m.jpg">
+<meta property="og:updated_time" content="2019-11-17T13:37:29.487Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="無名姑娘">
+<meta name="twitter:title" content="配置Android环境">
+<meta name="twitter:description" content="（第一讲）自述以及如何配置 Android 开发环境  gtf32 2018-04-25 魅族 MX4 大家好，从今天开始我将会每天推送一小篇文章，让大家利用碎片时间轻松入门Android 开发。   在我的分享中，你不需要有任何的编程经验，只要你有一颗爱探索的心就行。   考虑到大多数基友都是学生，而且都是用手机去阅读，所以我的所有分享都会用 Android上的开发工具 “AIDE” 和PC上">
+<meta name="twitter:image" content="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1573997879429">
+  <link rel="stylesheet" href="/css/style.css?v=1573997879613">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -162,118 +206,26 @@
               <i class="mdui-icon material-icons">menu</i>
             </a>
           </div>
-        <section class="nexmoe-posts" id="brand-waterfall">
-    
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/明日への手紙/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="https://i.speed.moe/images/0dc60fb6fae0000f8a8b45e6f048bd96.jpg">
-                
-                <h1>明日への手紙</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>378 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/歌词/">歌词</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=402070888&auto=0&height=66"></iframe>
-
-<p>元気でいます<br>最近还好吗<br>大事な人はできましたか<br>可有找到你珍惜的人</p>
-            
-        </article>
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg)">
+        
+        <h1>配置Android环境</h1>
     </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
+    <a><i class="nexmoefont icon-areachart"></i>2,349 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 8 分钟</a>
     
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/猫になりたい/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="http://s3tu.com/images/2019/11/17/PicsArt_11-17-08.45.541835b.md.jpg">
-                
-                <h1>猫になりたい</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>324 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/歌词/">歌词</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28461702&auto=0&height=66"></iframe>
-
-<p>灯りを消したまま話を続けたら<br>关了灯就这样继续着谈话<br>ガラスの向こう側で星がひとつ消えた<br>朝向窗子的那边有一颗星星消失了</p>
-            
-        </article>
-    </div>
+      <a class="nexmoefont icon-appstore-fill -link" href="/categories/技术/">技术</a>
     
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/白车轴草/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="http://s3tu.com/images/2019/11/17/PicsArt_11-17-08.14.13f1649.md.png">
-                
-                <h1>白车轴草</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>246 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/歌词/">歌词</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=740765&auto=0&height=66"></iframe>
-
-<p>こらえてきた涙が<br>眼中的泪水<br>とめどなく溢れだす<br>不停的流出<br>ふと思い出したのさ</p>
-            
-        </article>
-    </div>
     
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/配置android环境/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg)">
-                
-                <h1>配置Android环境</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>2,349 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 8 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/技术/">技术</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/技术/">技术</a>
-            
-        </div>
-        <article>
-            
-            <p><img src="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg" alt></p>
+      <a class="nexmoefont icon-tag-fill -link" href="/tags/技术/">技术</a>
+    
+  </div>
+  <article>
+    <p><img src="http://image.coolapk.com/feed/2018/0425/527743_1524643926_1042@963x433.jpg" alt></p>
 <p>（第一讲）自述以及如何配置 Android 开发环境</p>
 <p><img src="http://avatar.coolapk.com/data/000/52/77/43_avatar_middle.jpg?1455604044" alt></p>
 <p>gtf32</p>
@@ -377,95 +329,37 @@
 <p>3.1 总结  </p>
 <p>现在我相信你已经掌握了在手机和电脑上配置 Android 开发环境了，学了这么多你一定收获满满。</p>
 
-            
-        </article>
-    </div>
+  </article>
+  
     
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/未闻花名/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="https://i.speed.moe/images/0dc60fb6fae0000f8a8b45e6f048bd96.jpg">
-                
-                <h1>未闻花名</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>220 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/歌词/">歌词</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <p>俺たちは大人（おとな）になっていく</p>
-<p>我们在慢慢长大，</p>
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/曾经我也想过一了百了/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="http://s3tu.com/images/2019/11/17/PicsArt_11-17-08.46.4500cbc.md.png">
-                
-                <h1>曾经我也想过一了百了</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>698 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26830207&auto=0&height=66"></iframe>
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>無名姑娘<br>
+<strong>本文链接：</strong><a href="http://yoursite.com/2019/08/13/配置android环境/" title="http://yoursite.com/2019/08/13/配置android环境/" target="_blank" rel="noopener">http://yoursite.com/2019/08/13/配置android环境/</a><br>
 
-<p>僕が死のうと思ったのは　ウミネコが桟橋で鳴いたから<br>曾经我也想过一了百了 是因为海鸥在码头悲鸣</p>
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/08/13/無愛/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://s2.ax1x.com/2019/11/10/MKoQ7q.jpg">
-                
-                <h1>無愛</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>572 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/歌词/">歌词</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/杂文/">杂文</a>
-            
-        </div>
-        <article>
-            
-            <p>ねえ もしも全て投げ捨てられたら
-<br>如果说将这一切全部用都舍弃的话</p>
-            
-        </article>
-    </div>
-    
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
-
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
